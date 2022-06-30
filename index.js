@@ -4,7 +4,8 @@ import readlineSync from "readline-sync";
 
 export const getOptions = async(dir, params) => {
     if(params.length === 0){
-        console.log(chalk.red(`Please provide a framework to download or use ${chalk.red.bold.underline('pixie docs')} to see all available options`));
+        console.log(chalk.yellow(`Welcome to pixie!`));
+        console.log(chalk.blue(`Please provide a framework to download or use ${chalk.red.bold.underline('pixie docs')} to see all available options`));
         return;
     }
     const isOption = params[0] === 'docs';
