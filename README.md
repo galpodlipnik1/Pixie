@@ -9,7 +9,7 @@ A simple solution to creating most popular Javascript frameworks in seaconds.
 Install my-project with npm
 
 ```bash
-  npm i -g pixie-clone
+  npm i -g pixie-create
 ```
 
     

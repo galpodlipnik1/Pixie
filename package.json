@@ -1,6 +1,6 @@
 {
   "name": "pixie-create",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A very simple way to create basic apps for your favorite framework",
   "main": "index.js",
   "type": "module",
