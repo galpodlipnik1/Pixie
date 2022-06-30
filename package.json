@@ -1,5 +1,5 @@
 {
-  "name": "pixie-clone",
+  "name": "pixie-create",
   "version": "1.0.0",
   "description": "A very simple way to create basic apps for your favorite framework",
   "main": "index.js",
@@ -21,7 +21,10 @@
   "keywords": [
     "pixie",
     "cli",
-    "framework"
+    "framework",
+    "pixie",
+    "pixie-create",
+    "pixie-cli"
   ],
   "author": "Gal Podlipnik",
   "license": "ISC",
