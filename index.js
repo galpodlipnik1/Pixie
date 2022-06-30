@@ -53,35 +53,36 @@ const getFramework = (dir, params, install) => {
 }
 
 const logOptions = (dir) => {
+    console.log(chalk.green( `Welcome to pixie! below are the available options: chose one or exit and write it in the command line`));
     console.log(chalk.yellow(`
         Available frameworks:
-            [1]- ${chalk.green.bold('pixie react [dir or "install"]')}
-            [2]- ${chalk.green.bold('pixie vue [dir or "install"]')}
-            [3]- ${chalk.green.bold('pixie angular [dir or "install"]')}
-            [4]- ${chalk.green.bold('pixie svelte [dir or "install"]')}
-            [5]- ${chalk.green.bold('pixie nextjs [dir or "install"]')}
+            [1]- ${chalk.green.bold('pixie react')}
+            [2]- ${chalk.green.bold('pixie vue')}
+            [3]- ${chalk.green.bold('pixie angular')}
+            [4]- ${chalk.green.bold('pixie svelte')}
+            [5]- ${chalk.green.bold('pixie nextjs')}
             [6]- ${chalk.green.bold('exit')}
     `));
     //get the number from the user and save it to a variable
-    const frameworkNum = readlineSync.question(chalk.yellow(`Please choose a framework to download: `));
+    const frameworkNum = readlineSync.question(chalk.yellow(`Please choose a framework to initialize: `));
     
     switch(frameworkNum){
-        case '0':
+        case '1':
             getFramework(dir, ['react'], false);
             break;
-        case '1':
+        case '2':
             getFramework(dir, ['vue'], false);
             break;
-        case '2':
+        case '3':
             getFramework(dir, ['angular'], false);
             break;
-        case '3':
+        case '4':
             getFramework(dir, ['svelte'], false);
             break;
-        case '4':
+        case '5':
             getFramework(dir, ['nextjs'], false);
             break;
-        case '5':
+        case '6':
             console.log(chalk.yellow(`Exiting...`));
             break;
         default:
