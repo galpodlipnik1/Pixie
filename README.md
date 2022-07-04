@@ -28,7 +28,7 @@ pixie docs
 
 Creating a react project
 ```bash
-pixie react
+pixie react or pixie react-ts
 ```
 This will create a cleaned up react project without node_modules.
 
@@ -36,7 +36,7 @@ This will create a cleaned up react project without node_modules.
 
 Creating a vue project
 ```bash
-pixie vue
+pixie vue or pixie vue-ts
 ```
 This will create a cleaned up react project without node_modules.
 
@@ -61,11 +61,17 @@ Install is optional
 
 ## Featured Frameworks
 
-- React
-- Vue3
-- Svelte
+- React || react-ts
+- Vue3 || vue-ts
+- Svelte || svelte-ts
 - Nextjs
 - Angular
+
+## Version
+
+- 1.1.0
+- Read CHANGELOG.md for more details
+- Released on 04/07/2022
 
 
 ## Authors
