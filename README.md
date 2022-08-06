@@ -66,6 +66,7 @@ Install is optional
 - Svelte || svelte-ts
 - Nextjs
 - Angular
+- Pre configured mern with tailwindcss
 
 ## Version
 
