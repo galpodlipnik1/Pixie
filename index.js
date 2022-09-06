@@ -40,7 +40,7 @@ export const getOptions = async(dir, params) => {
 
 const getFramework = (dir, params, install) => {
     const framework = params[0];
-    const isValidFramework = ['react', 'vue', 'angular', 'svelte', 'nextjs'].includes(framework);
+    const isValidFramework = ['react','react-ts','vue-ts','svelte-ts','mern', 'vue', 'angular', 'svelte', 'nextjs'].includes(framework);
     if(!isValidFramework){
         console.log(chalk.red(`${chalk.red.bold.underline('pixie')} only supports the following frameworks: ${chalk.red.bold.underline('react, vue, angular, svelte, nextjs')}`));
         return;
@@ -56,33 +56,49 @@ const logOptions = (dir) => {
     console.log(chalk.green( `Welcome to pixie! below are the available options: chose one or exit and write it in the command line`));
     console.log(chalk.yellow(`
         Available frameworks:
-            [1]- ${chalk.green.bold('pixie react')}
-            [2]- ${chalk.green.bold('pixie vue')}
-            [3]- ${chalk.green.bold('pixie angular')}
-            [4]- ${chalk.green.bold('pixie svelte')}
-            [5]- ${chalk.green.bold('pixie nextjs')}
-            [6]- ${chalk.green.bold('exit')}
+            [0]- ${chalk.green.bold('pixie react')}
+            [1]- ${chalk.green.bold('pixie vue')}
+            [2]- ${chalk.green.bold('pixie angular')}
+            [3]- ${chalk.green.bold('pixie svelte')}
+            [4]- ${chalk.green.bold('pixie nextjs')}
+            [5]- ${chalk.green.bold('pixie react-ts')}
+            [6]- ${chalk.green.bold('pixie vue-ts')}
+            [7]- ${chalk.green.bold('pixie svelte-ts')}
+            [8]- ${chalk.green.bold('pixie mern')}
+            [9]- ${chalk.green.bold('exit')}
     `));
     //get the number from the user and save it to a variable
     const frameworkNum = readlineSync.question(chalk.yellow(`Please choose a framework to initialize: `));
     
     switch(frameworkNum){
-        case '1':
+        case '0':
             getFramework(dir, ['react'], false);
             break;
-        case '2':
+        case '1':
             getFramework(dir, ['vue'], false);
             break;
-        case '3':
+        case '2':
             getFramework(dir, ['angular'], false);
             break;
-        case '4':
+        case '3':
             getFramework(dir, ['svelte'], false);
             break;
-        case '5':
+        case '4':
             getFramework(dir, ['nextjs'], false);
             break;
+        case '5':
+            getFramework(dir, ['react-ts'], false);
+            break;
         case '6':
+            getFramework(dir, ['vue-ts'], false);
+            break;
+        case '7':
+            getFramework(dir, ['svelte-ts'], false);
+            break;
+        case '8':
+            getFramework(dir, ['mern'], false);
+            break;
+        case '9':
             console.log(chalk.yellow(`Exiting...`));
             break;
         default:
